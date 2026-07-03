@@ -1,119 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OzTeen Rubbish Removals</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OzTeen Rubbish Removals | Same-Day Quotes, Next-Day Removals</title>
+<meta name="description" content="OzTeen Rubbish Removals — household junk, garden waste, renovation debris, commercial clear-outs and single item pickups. Same-day quotes, next-day removals, flat pricing.">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- TOP BAR -->
-    <header class="header">
-        <div class="header-container">
-            <img src="OzLogo.jpeg" alt="OzTeen Logo" class="logo">
-            <div>
-                <h1>OzTeen Rubbish Removals</h1>
-                <p>Sydney’s Fast & Affordable Waste Removal Service</p>
-            </div>
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="logo-link">
+      <img src="OzLogo.jpeg" alt="OzTeen Rubbish Removals" class="logo">
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#quote">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:0438 619 660" class="phone-link">📞 0438 619 660
+      </a>
+      <a href="#quote" class="btn btn-primary">Get a Quote</a>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero container">
+    <div class="hero-copy">
+      <h1>Rubbish gone.<br>Next Day</h1>
+      <p>Household junk, garden waste, renovation debris and single-item pickups — booked in minutes, cleared before dinner.</p>
+      <div class="hero-cta">
+        <a href="#quote" class="btn btn-primary btn-lg">Book Next-Day Removal</a>
+        <a href="tel:0438 619 660" class="btn btn-outline btn-lg">Call Now</a>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat">
+          <b>Same-Day</b>
+          <span>Quotes</span>
         </div>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>We Remove Rubbish. You Get Your Space Back.</h2>
-            <p>Household • Construction • Green Waste • Same Day Service Available</p>
+        <div class="stat">
+          <b>Next-Day</b>
+          <span>Removals Available</span>
         </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="services">
-        <h2>Our Services</h2>
-
-        <div class="services-grid">
-
-            <div class="service-card">
-                <h3>Household Cleanups</h3>
-                <p>Old furniture, junk, and general household waste removal.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Construction Waste</h3>
-                <p>Reliable removal of renovation and building materials.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Green Waste</h3>
-                <p>Garden waste, branches, soil, and outdoor cleanups.</p>
-            </div>
-
+        <div class="stat">
+          <b>Flat</b>
+          <span>Pricing</span>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- BEFORE & AFTER -->
-    <section class="before-after">
-        <h2>Before & After Results</h2>
-        <p>Real jobs showing the difference we make.</p>
+    <div class="hero-photo">
+      <img src="OzLogo.jpeg" alt="Logo" loading="eager">
+    </div>
+  </section>
 
-        <div class="ba-grid">
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="services container">
+    <div class="section-head">
+      <span class="eyebrow">What we clear</span>
+      <h2>One Quote. Any load.</h2>
+    </div>
 
-            <div class="ba-card">
-                <h3>Before</h3>
-                <img src="Before.jpg" alt="Before cleanup">
-            </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>Household Junk</h3>
+        <p>Old furniture, appliances, general clutter — cleared out room by room or all at once.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🌿</div>
+        <h3>Garden Waste</h3>
+        <p>Green waste, branches, palm fronds and yard clean-up debris, hauled away fast.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛏️</div>
+        <h3>Mattresses</h3>
+        <p>We Collect Mattreses at a fixed Fee (Dependant on Size and Location)</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🗄️</div>
+        <h3>Commercial Clear-Outs</h3>
+        <p>Office fit-outs, retail strip-outs and end-of-lease clean-ups for local businesses.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📦</div>
+        <h3>Single Item Pickup</h3>
+        <p>Just one couch, one fridge, one mattress? No job too small — flat rate, no fuss.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <h3>Next-Day Service</h3>
+        <p>Message us before 5pm and there's a good chance we can come clear tommorow at a small added fee ($45).</p>
+      </div>
+    </div>
+  </section>
 
-            <div class="ba-card">
-                <h3>After</h3>
-                <img src="After.jpeg" alt="After cleanup">
-            </div>
+  <!-- ===== BEFORE / AFTER GALLERY ===== -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Recent job</span>
+        <h2>Cluttered to clear, in one visit</h2>
+      </div>
 
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="Before.jpg" alt="Driveway before OzTeen Rubbish Removals cleared it">
+          <figcaption>Before</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="After.jpeg" alt="Driveway after OzTeen Rubbish Removals cleared it">
+          <figcaption>After</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section id="pricing" class="pricing container">
+    <div class="section-head">
+      <span class="eyebrow">Flat pricing</span>
+      <h2>No surprises. Ever.</h2>
+      <p class="section-sub">We quote your load upfront, before we lift a thing.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Mattresses</h3>
+        <div class="price">From $80</div>
+        <ul>
+          <li>1–4 items</li>
+          <li>Next-Day slots</li>
+          <li>No booking fee</li>
+        </ul>
+        <a href="#quote" class="btn btn-outline">Get This Quote</a>
+      </div>
+
+      <div class="price-card price-card--pop">
+        <span class="pop-badge">Most Popular</span>
+        <h3>General Waste</h3>
+        <div class="price">Starting from $70</div>
+        <ul>
+          <li>Household junk</li>
+          <li>Garage Clearing</li>
+          <li>Most common job</li>
+        </ul>
+        <a href="#quote" class="btn btn-primary">Get This Quote</a>
+      </div>
+
+      <div class="price-card">
+        <h3>Green Waste</h3>
+        <div class="price">From $80</div>
+        <ul>
+          <li>Soil</li>
+          <li>Trees, Branches and More</li>
+          <li>Common Across Northern Beaches</li>
+        </ul>
+        <a href="#quote" class="btn btn-outline">Get This Quote</a>
+      </div>
+    </div>
+    <p class="pricing-note">Final price confirmed on-site before any work begins — always flat, always upfront.</p>
+  </section>
+
+  <!-- ===== QUOTE / CONTACT FORM ===== -->
+  <section id="quote" class="quote">
+    <div class="container quote-inner">
+      <div class="quote-copy">
+        <span class="eyebrow">Get a free quote</span>
+        <h2>Tell us what needs to go</h2>
+        <p>Fill in the form and we'll text or email you a flat quote — usually within the hour.</p>
+
+        <ul class="quote-points">
+          <li>✓ Same-day quotes</li>
+          <li>✓ Next-day removals</li>
+          <li>✓ Flat, upfront pricing</li>
+        </ul>
+
+        <div class="quote-contact">
+          <a href="tel:0400000000">📞 0438 619 660</a>
+          <a href="mailto:ozteenrubbish@gmail.com">✉ ozteenrubbish@gmail.com</a>
+          <span>📍 Servicing Sydney &amp; surrounding suburbs</span>
         </div>
-    </section>
+      </div>
 
-    <!-- ABOUT -->
-    <section class="about">
-        <div class="about-container">
-            <h2>About Us</h2>
-            <p>
-                We are a Sydney-based rubbish removal business, founded by a small group of university students, we are focused on fast, affordable, and eco-friendly waste solutions.
-                Whether it’s a small pickup or a full property cleanout, we get it done efficiently.
-            </p>
+      <form id="quote-form" class="quote-form" action="https://formspree.io/f/xpqgokev" method="POST">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required placeholder="Jane Smith">
         </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>📞 0438 619 660</p>
-        <p>📧 ozteenrubbish@gmail.com</p>
-    </section>
+        <div class="form-row form-row--split">
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required placeholder="0400 000 000">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="jane@email.com">
+          </div>
+        </div>
 
-    <!-- QUOTE FORM -->
-<section class="quote">
-    <h2>Get a Free Quote</h2>
-    <p>Fill in the form below and we’ll get back to you ASAP.</p>
+        <div class="form-row">
+          <label for="suburb">Suburb</label>
+          <input type="text" id="suburb" name="suburb" required placeholder="Manly, NSW">
+        </div>
 
-    <form action="https://formspree.io/f/xpqgokev" method="POST" class="quote-form">
+        <div class="form-row">
+          <label for="service">What needs clearing?</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option>Household Junk</option>
+            <option>Garden Waste</option>
+            <option>Mattress/s</option>
+            <option>Commercial Clear-Out</option>
+            <option>Single Item Pickup</option>
+            <option>Not sure / other</option>
+          </select>
+        </div>
 
-        <input type="text" name="name" placeholder="Your Name" required>
+        <div class="form-row">
+          <label for="message">Tell us a bit more (Estimated Size/Weight, Access/Parking etc.)</label>
+          <textarea id="message" name="message" rows="4" placeholder="e.g. Old couch, mattress and a few boxes in the garage"></textarea>
+        </div>
 
-        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="quote-submit">Get My Free Quote</button>
 
-        <input type="email" name="email" placeholder="Your Email" required>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
 
-        <textarea name="message" rows="5" placeholder="Location? What rubbish needs removing?, Rough Estimated weight?" required></textarea>
+</main>
 
-        <button type="submit">Send Quote Request</button>
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <img src="OzLogo.jpeg" alt="OzTeen Rubbish Removals" class="footer-logo">
+    <p>© <span id="year"></span> OzTeen Rubbish Removals. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#quote">Contact</a>
+    </div>
+  </div>
+</footer>
 
-    </form>
-</section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 OzTeen Rubbish Removals. All Rights Reserved.</p>
-    </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
