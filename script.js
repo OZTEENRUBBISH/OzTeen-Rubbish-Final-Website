@@ -21,10 +21,31 @@ form.addEventListener('submit', function(e){
 
   if (!ok) return;
 
-  // Preview mode: no live Formspree endpoint wired up here, so we just
-  // simulate a successful send and show the confirmation state.
-  card.classList.add('sent');
-  card.scrollIntoView({behavior:'smooth', block:'center'});
+  const data = new FormData(form);
+  const submitBtn = form.querySelector('.submit');
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending…';
+
+  fetch('https://formspree.io/f/xpqgokev', {
+    method: 'POST',
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  })
+    .then(function(response){
+      if (response.ok) {
+        card.classList.add('sent');
+        card.scrollIntoView({behavior:'smooth', block:'center'});
+      } else {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send my details';
+        alert('Something went wrong sending your details. Please call 0438 619 660 instead.');
+      }
+    })
+    .catch(function(){
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send my details';
+      alert('Something went wrong sending your details. Please call 0438 619 660 instead.');
+    });
 });
 
 form.querySelectorAll('[data-f] .inp').forEach(function(i){
