@@ -1,4 +1,4 @@
-document.getElementById('yr').textContent = new Date().getFullYear();
+ document.getElementById('yr').textContent = new Date().getFullYear();
 
 const form = document.getElementById('quoteForm');
 const card = document.getElementById('quote');
@@ -26,13 +26,14 @@ form.addEventListener('submit', function(e){
   submitBtn.disabled = true;
   submitBtn.textContent = 'Sending…';
 
-  fetch('https://formspree.io/f/xpqgokev', {
+  fetch('https://api.web3forms.com/submit', {
     method: 'POST',
     body: data,
     headers: { 'Accept': 'application/json' }
   })
-    .then(function(response){
-      if (response.ok) {
+    .then(function(response){ return response.json(); })
+    .then(function(result){
+      if (result.success) {
         card.classList.add('sent');
         card.scrollIntoView({behavior:'smooth', block:'center'});
       } else {
